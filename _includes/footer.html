@@ -25,7 +25,13 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
-        </ul>
+
+          {% if site.stackoverflow %}
+          <li>
+            {% include icon-so.html username=site.stackoverflow name=site.name%}
+          </li>
+          {% endif %}
+          </ul>
       </div>
 
       <div class="footer-col footer-col-3">
